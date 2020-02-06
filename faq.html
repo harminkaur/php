@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> All Questions/Answers </title>
+    <script>
+            $(document).ready(function() {
+            
+               $('.faq_question').click(function() {
+            
+                   if ($(this).parent().is('.open')){
+                       $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+                       $(this).closest('.faq').removeClass('open');
+            
+                       }else{
+                           var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                           $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                           $(this).closest('.faq').addClass('open');
+                       }
+            
+               });
+            
+           });
+           </script>
+           <style>
+           /*FAQS*/
+           .faq_question {
+               margin: 0px;
+               padding: 20px 0px 10px 80px;
+               display: inline-block;
+               cursor: pointer;
+               font-weight: bold;
+           }
+            
+           .faq_answer_container {
+               height: 0px;
+               overflow: hidden;
+               padding: 0px;
+               margin-left: 60px;
+           }
+
+           body {
+              background-color: pink;
+           }
+           </style>
+</head>
+<body>
+   <div id="wrapper">
+         <div id="header">
+               <br>
+       <center> <h1> <i> <u> How can we help ? </u> </i> </h1> 
+       <form method="POST" action="script.php">
+       <input type="text" placeholder="Search with the keyword..." name="search" id="box">
+       <button type="submit"> <i class="fa fa-search"> </i> </button> <br> <br>
+   </center>
+</form>
+        </div>
+      <!-- <div id="header">
+            <center> <h1> <i> <u> Help Centre !!! </u> </i> </h1> 
+            <form method="POST" action="script.php">
+            <input type="text" placeholder="Search with the keyword..." name="search" id="box">
+            <button type="submit"> <i class="fa fa-search"> </i> </button>
+         </form>
+         <!-- <a href="faq.html"> <h3> <i> <u> FAQ's by Categories </u> </i> </h3> </a> -->
+       <!-- <h1> FAQ's by Category </h1> </center>
+       </div>
+             </div> -->
+    
+     <hr>
+        <div class="faq_container">
+                <div class="faq"> <h2> &hearts; Delivery </h2>
+                   <div class="faq_question"> Q:1) What can I do if a parcel was delivered late? </div>
+                        <div class="faq_answer_container">
+                           <div class="faq_answer"> Ans:) You may qualify for a postage refund if:
+                                a) You are the sender of the parcel and you have a copy of the mailing receipt.
+                                b) You used one of our On-Time Delivery Guarantee services. </div>
+                        </div>        
+                 </div>
+              </div>
+
+              <div class="faq_container">
+                  <div class="faq">
+                     <div class="faq_question"> Q:2) Why hasn't my letter been delivered yet? </div>
+                          <div class="faq_answer_container">
+                             <div class="faq_answer"> Ans:) If you are receiving someone else’s mail, or you know someone is receiving your mail, fill out the form below to create a service ticket to report the issue. </div>
+                          </div>        
+                   </div>
+                </div>
+
+               <div class="faq_container">
+                     <div class="faq">
+                        <div class="faq_question"> Q:3) What can I do if I receive someone else' mail? </div>
+                             <div class="faq_answer_container">
+                                <div class="faq_answer"> Ans:) If you are waiting for a letter to arrive, please be aware that standard delivery times vary depending on distance.  Local mail typically takes 2 days, mail within the province requires 3 days, and mail sent nationally requires 5 days for delivery. </div>
+                             </div>        
+                      </div>
+                   </div>
+
+               <div class="faq_container">
+                        <div class="faq">
+                           <div class="faq_question"> Q:4) Why was my item returned to sender if the address exists? </div>
+                                <div class="faq_answer_container">
+                                   <div class="faq_answer"> Ans:) The reason for the return is marked on your item. Items are returned to sender if:
+
+                                       The address does not exist.
+                                       The item does not bear a sufficient address.
+                                       The addressee has moved without providing a forwarding address.
+                                       The item is refused by the addressee.
+                                       The item contains insufficient postage.
+                                       Your item will require new postage before you resend it. </div>
+                                </div>        
+                         </div>
+                      </div>
+
+
+                <hr>
+
+              <div class="faq_container">
+                    <div class="faq"> <h2> &diamondsuit; Mail Forwarding </h2> 
+                       <div class="faq_question"> Q:1) How do I change my mailing address (forward my mail)? </div>
+                            <div class="faq_answer_container">
+                               <div class="faq_answer"> Ans:) You can order Mail Forwarding online here with a Canadian credit card and valid email address.
+
+                                    You can buy the service at a post office – save time by filling out the Mail Forwarding order form in advance. You will need to show government-issued photo ID like a driver’s license, passport or citizenship card.
+                                    
+                                    If you are forwarding someone else’s mail, you will need show authorization to act on their behalf. Learn more. </div>
+                            </div>        
+                     </div>
+                  </div>
+
+               <div class="faq_container">
+                        <div class="faq"> 
+                           <div class="faq_question"> Q:2) How to cancel Mail Forwarding? </div>
+                                <div class="faq_answer_container">
+                                   <div class="faq_answer"> Ans:) You can cancel Mail Forwarding online whether you purchased it online or at a post office. All you need is:
+
+                                       The reference number from the confirmation email we sent when you placed your order, or on the Service Summary printout from the post office.
+                                       The password you created when you bought the service online. If you provided your email when you bought Mail Forwarding at the post office, you can get a temporary password.
+                                       If you cancel before your service start date, your credit card will automatically be refunded (online purchase only). No refunds will be provided once your service has started. </div>
+                                </div>        
+                         </div>
+                  </div>
+
+<div class="faq_container">
+                    <div class="faq">
+                       <div class="faq_question"> Q:3) Report a problem with Mail Forwarding. </div>
+                            <div class="faq_answer_container">
+                               <div class="faq_answer"> Ans:) Looking for help with your Mail Forwarding service? See the support articles below for some of the most common issues related to Mail Forwarding. You’ll be able to open a service ticket online to request help or report a problem. </div>
+                            </div>        
+                     </div>
+                  </div>
+
+                  <div class="faq_container">
+                        <div class="faq">
+                           <div class="faq_question"> Q:4) What does “Delivered as a safe drop” mean? </div>
+                                <div class="faq_answer_container">
+                                   <div class="faq_answer"> Ans:) We attempt to deliver your parcels directly to you. If you’re not available to receive them, we may leave the package in a safe area at your location (a “safe drop”) so that you don’t need to travel to a post office to pick it up. </div>
+                                </div>        
+                         </div>
+                        </div>
+
+                        <hr>
+
+                  <div class="faq_container">
+                        <div class="faq"> <h2> &clubs; Tracking Status </h2>
+                           <div class="faq_question"> Q:1) What to do if I lose my tracking number? </div>
+                                <div class="faq_answer_container">
+                                   <div class="faq_answer"> Ans:) Tracking numbers are typically 11 or 13 alphanumeric characters ending in CA, or 16 digits.
+
+                                       If you sent a parcel through PriorityTM, XpresspostTM, or Regular ParcelTM with delivery confirmation, the tracking number will be at the bottom of your tracking receipt.
+                                       
+                                       If you sent your parcel to the U.S.A. or internationally, the tracking number will appear on your copy of the shipping label as well as on your receipt. </div>
+                                </div>        
+                         </div>
+                      </div>
+         
+                  <div class="faq_container">
+                           <div class="faq">
+                              <div class="faq_question"> Q:2) What can I do if the parcel I sent is in customs? </div>
+                                   <div class="faq_answer_container">
+                                      <div class="faq_answer"> Ans:) The status of a parcel you sent to an international destination indicates that it is in customs.
+
+                                          Parcels you send outside of Canada need go through the receiving country’s customs process. Once a package is in customs:
+                                          
+                                          Neither Canada Post nor the receiving postal administration can intervene or inquire about the status of the parcel.
+                                          Times for packages to clear customs vary. Delays can occur due to the package itself, its documentation or the volume of packages in customs at the time.
+                                          You must wait for the parcel to clear customs to get an update on the status. </div>
+                                   </div>        
+                            </div>
+                         </div>
+<div class="faq_container">
+                           <div class="faq">
+                              <div class="faq_question"> Q:3) What happens to a letter or parcel that is addressed incorrectly? </div>
+                                   <div class="faq_answer_container">
+                                      <div class="faq_answer"> Ans:) If a letter or parcel has an address on it, we are required to try to deliver the item to the address indicated. Changes or corrections can’t be made to the address, or the letter or package, once it has been mailed.   </div>
+                                   </div>        
+                            </div>
+                         </div>
+
+               <div class="faq_container">
+                           <div class="faq">
+                              <div class="faq_question"> Q:4) Why is there no longer any information about my item when I track it online? </div>
+                                   <div class="faq_answer_container">
+                                      <div class="faq_answer"> Ans:) Occasionally, as items are processed through our delivery network, certain conditions arise where we are unable to display current or past tracking events. Rest assured that your item is always making progress towards its final destination. </div>
+                                   </div>        
+                            </div>
+                         </div>
+
+                         <hr>
+
+                  <div class="faq_container">
+                           <div class="faq"> <h2> &spades; Post Office/Rates </h2>
+                              <div class="faq_question"> Q:1) How do I calculate how much postage I need for a letter or parcel? </div>
+                                   <div class="faq_answer_container">
+                                      <div class="faq_answer"> Ans:) The amount of postage you need for a letter is determined by the weight, size and destination of your item. Add-on options such as additional insurance also affect cost. For postage rates on items from other countries, check the postal website of the originating country. </div>
+                                   </div>        
+                            </div>
+                         </div>
+
+                  <div class="faq_container">
+                              <div class="faq">
+                                 <div class="faq_question"> Q:2) How to use the Find a Post Office tool? </div>
+                                      <div class="faq_answer_container">
+                                         <div class="faq_answer"> Ans:) Looking for a post office? Use our online tool Find a Post Office.
+
+                                             Enter your postal code, address or intersection. You’ll get a map showing post offices and outlets near you.
+                                             Select the red post office symbol for the location you want.
+                                             Select the post office name to see the address, hours of operation and services. </div>
+                                      </div>        
+                               </div>
+                         </div>
+                  <div class="faq_container">
+                                 <div class="faq">
+                                    <div class="faq_question"> Q:3) Package/Parcel Size and Shape Information? </div>
+                                         <div class="faq_answer_container">
+                                            <div class="faq_answer"> Ans:) How much can my package/parcel weigh?
+                                                Parcels shipped within Canada have a maximum weight of 30 kilograms.
+                                                Parcels shipped to the U.S.A. or an international destination have a maximum weight of 30 kilograms. </div>
+                                         </div>        
+                                  </div>
+                         </div>
+
+                  <div class="faq_container">
+                                    <div class="faq">
+                                       <div class="faq_question"> Q:4) What are PERMANENT stamps and where can I use them? </div>
+                                            <div class="faq_answer_container">
+                                               <div class="faq_answer"> Ans:) The PERMANENT™ stamp, identified with the letter P in place of a value, is always accepted at the current domestic postage price. If you buy a PERMANENT stamp today, you can use it anytime in the future.
+
+                                                   One PERMANENT stamp can be used to mail a letter (weighing up to 30 grams) anywhere in Canada. You can also use PERMANENT stamps in conjunction with additional postage to mail larger letters, parcels or to send mail internationally. </div>
+                                            </div>        
+                                     </div>
+                         </div>
+
+
+                     </center>
+                     <br>
+                     <br>
+                     <br>
+                  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#header {
+    text-align: center;
+    height: 200px;
+    background-image: url("images/background-faq.jpg");
+    background-image: no-repeat;
+    background-position: 10px;
+    
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#box {
+    width: 450px;
+    height: 20px;
+}
+
+body {
+    background-color: pink;
+ }
+
